@@ -1,3 +1,6 @@
+/**
+ * Navbar Functionality
+ */
 const navBar = () => {
   const burger = document.querySelector('.burger');
   const nav = document.querySelector('.nav-links');
@@ -45,4 +48,68 @@ const navBar = () => {
   })
 }
 
+/**
+ * Slider Functionality
+ */
+const slide = () => {
+  const carouselWidth = window.innerWidth;
+  const carouselView = document.querySelector('.home-carousel-wrapper');
+  const carouselItem = document.querySelectorAll('.carousel-container .home-hero');
+  const carouselContainer = document.querySelector('.carousel-container');
+
+  //Button
+  const prevBtn = document.querySelector('#prevBtn');
+  const nextBtn = document.querySelector('#nextBtn');
+
+  //Carousel setup
+  carouselView.style.width = carouselWidth + 'px';
+  carouselView.style.overflow = 'hidden';
+  carouselContainer.style.width = carouselWidth * carouselItem.length + 'px';
+
+  let counter = 1;
+  carouselContainer.style.marginLeft = `0px`
+
+  //Carousel Background Img
+  carouselItem.forEach((homeHero, index) => {
+    let dataImgSrc = homeHero.getAttribute('data-img-src');
+    homeHero.style.width = carouselWidth + 'px';
+    homeHero.style.backgroundImage = `url(${dataImgSrc})`;
+  })
+
+  //Button Listener
+  nextBtn.addEventListener('click', (e) => {
+    carouselContainer.style.transition = `margin 1s ease-in-out`;
+    carouselContainer.style.marginLeft = `-${counter*carouselWidth}px`;
+    counter++;
+    checkCounter()
+  })
+
+  prevBtn.addEventListener('click', (e) => {
+    carouselContainer.style.transition = `margin 1s ease-in-out`;
+    counter--;
+    carouselContainer.style.marginLeft = `${parseInt(carouselContainer.style.marginLeft) +carouselWidth}px`;
+    checkCounter();
+  })
+
+  let checkCounter = () => {
+    if (counter > carouselItem.length) {
+      counter = 1;
+      carouselContainer.style.marginLeft = `0px`;
+    }
+    if (counter < 1) {
+      counter = carouselItem.length;
+      carouselContainer.style.marginLeft = `-${carouselWidth * (counter - 1)}px`;
+    }
+  }
+}
+
+/**
+ * Window Resize event handling
+ */
+window.addEventListener('resize', slide);
+
+/**
+ * Navbar and Slider Function Call
+ */
+slide();
 navBar();

@@ -39,6 +39,7 @@ h3 {
   text-transform: uppercase;
 }
 
+/* Colors */
 .bg-primary {
   background-color: #002e5b;
   color: white;
@@ -56,6 +57,7 @@ h3 {
   color: #fde52c;
 }
 
+/* Clearfix */
 .row::after {
   content: "";
   clear: both;
@@ -153,6 +155,10 @@ header {
 }
 
 .lang-select {
+  display: none;
+}
+
+.home-carousel-wrapper {
   display: none;
 }
 
@@ -704,6 +710,20 @@ footer {
     display: block;
   }
 
+  .home-carousel-wrapper {
+    display: block;
+  }
+
+  section.home-hero {
+    display: none;
+  }
+
+  .home-hero {
+    position: relative;
+    float: left;
+    background-repeat: no-repeat;
+  }
+
   .home-hero-flex-wrapper {
     width: 400px;
     left: 57.09401709%;
@@ -728,6 +748,22 @@ footer {
     text-transform: uppercase;
     background-color: transparent;
     border: none;
+  }
+
+  #prevBtn {
+    background-image: url('../images/left-arrow.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 50px;
+    padding-right: 10px;
+  }
+
+  #nextBtn {
+    background-image: url('../images/right-arrow.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 50px;
+    padding-left: 10px;
   }
 
   .home-hero-flex-wrapper h1 {
