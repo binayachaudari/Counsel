@@ -6,7 +6,6 @@ const navBar = () => {
   const burgerLines = burger.querySelectorAll('div');
 
   burger.addEventListener('click', (e) => {
-
     burgerLines.forEach((line, index) => {
       line.style.transition = 'all 0.5s ease';
     })
@@ -22,13 +21,26 @@ const navBar = () => {
       if (activeNav) {
         activeNav.classList.remove('active');
       }
+
       burger.addEventListener('click', (e) => {
         activeNav = document.querySelector('li.active');
         if (activeNav) {
           activeNav.classList.remove('active');
         }
       })
+
       navItem.classList.add('active');
+    });
+  });
+
+  const langSelect = document.querySelector('.nav-links .lang-select a img');
+  const langList = document.querySelectorAll('.lang-select .lang-list li');
+
+  langList.forEach((langItem, index) => {
+    langItem.addEventListener('click', (e) => {
+      let imgTag = langItem.querySelector('a img');
+      let imgSrc = imgTag.getAttribute('src')
+      langSelect.setAttribute('src', imgSrc)
     })
   })
 }
