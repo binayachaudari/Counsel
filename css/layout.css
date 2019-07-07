@@ -350,6 +350,10 @@ header {
   text-transform: uppercase;
 }
 
+.map-info-item-desc i {
+  color: #002e5b;
+}
+
 .location-details-wrapper {
   font-size: 10px;
 }
@@ -980,4 +984,5 @@ footer {
   .map-info-item {
     width: 31.566%;
   }
+
 }
