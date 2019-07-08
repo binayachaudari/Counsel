@@ -205,12 +205,12 @@ header {
   transform: translateX(-50%);
 }
 
-.section-01, .section-02, .call-to-action, .popular-services,
+.section-about , .why-we-best, .call-to-action, .popular-services,
 .counter, .section-video, .section-testimonials, .contact-us {
   padding: 50px 0;
 }
 
-.section-01 .section-image-wrapper {
+.section-about  .section-image-wrapper {
   display: none;
 }
 
@@ -253,7 +253,7 @@ header {
   padding: 2px;
 }
 
-.section-02 {
+.why-we-best {
   background-color: #f4f4f4;
 }
 
@@ -466,18 +466,18 @@ footer {
     font-size: 14px;
   }
 
-  .section-01, .section-02, .call-to-action, .popular-services,
+  .section-about , .why-we-best, .call-to-action, .popular-services,
   .counter, .section-video, .section-testimonials, .contact-us {
     padding: 70px 0;
   }
 
-  .section-01 .section-image-wrapper {
+  .section-about  .section-image-wrapper {
     display: block;
     padding: 0;
     margin-bottom: 42px;
   }
 
-  .section-01 .section-image-wrapper img {
+  .section-about  .section-image-wrapper img {
     box-shadow: 0 0 10px -3px rgba(0, 0, 0, .30)
   }
 
@@ -797,7 +797,7 @@ footer {
     right: 223px;
   }
 
-  .section-01, .section-02, .popular-services,
+  .section-about , .why-we-best, .popular-services,
   .counter, .section-video, .section-testimonials, .contact-us {
     padding: 100px 0;
   }
@@ -806,16 +806,16 @@ footer {
     margin: 0;
   }
 
-  .section-01 .section-image-wrapper {
+  .section-about  .section-image-wrapper {
     float: right;
     width: 43%;
     margin: 0;
     position: relative;
   }
 
-  .section-01 .section-image-wrapper::before {
+  .section-about  .section-image-wrapper::before {
     content: '';
-    background-image: url('../images/yellow-bar.png');
+    background-color: #fde52c;
     position: absolute;
     top: -80%;
     left: 50%;
@@ -826,7 +826,7 @@ footer {
     z-index: -5;
   }
 
-  .section-01 .section-contents-wrapper {
+  .section-about  .section-contents-wrapper {
     width: 52%;
     float: left;
     text-align: left;
@@ -853,12 +853,12 @@ footer {
     font-size: 16px;
   }
 
-  .section-02 .section-image-wrapper {
+  .why-we-best .section-image-wrapper {
     float: left;
     width: 43%;
   }
 
-  .section-02 .section-contents-wrapper {
+  .why-we-best .section-contents-wrapper {
     float: right;
     width: 52%;
   }
@@ -943,7 +943,7 @@ footer {
 
   .section-video .video-player-wrapper::before {
     content: '';
-    background-image: url('../images/yellow-bar.png');
+    background-color: #fde52c;
     position: absolute;
     top: -80%;
     left: 50%;
@@ -1046,19 +1046,19 @@ footer {
     font-size: 51px;
   }
 
-  .section-01 .section-image-wrapper {
+  .section-about  .section-image-wrapper {
     width: 42.73504274%;
   }
 
-  .section-01 .section-contents-wrapper {
+  .section-about  .section-contents-wrapper {
     width: 47.52136752%;
   }
 
-  .section-02 .section-image-wrapper {
+  .why-we-best .section-image-wrapper {
     width: 42.73504274%;
   }
 
-  .section-02 .section-contents-wrapper {
+  .why-we-best .section-contents-wrapper {
     width: 47.52136752%;
   }
 
