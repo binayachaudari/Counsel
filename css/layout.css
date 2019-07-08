@@ -39,6 +39,16 @@ h3 {
   text-transform: uppercase;
 }
 
+button {
+  outline: none;
+  background: transparent;
+  border: none;
+}
+
+button:focus {
+  outline: none;
+}
+
 /* Colors */
 .bg-primary {
   background-color: #002e5b;
@@ -260,6 +270,11 @@ header {
   display: inline-block;
   text-transform: uppercase;
   border-radius: 5px;
+}
+
+.contact-now-btn a {
+  text-decoration: none;
+  color: #002e5b;
 }
 
 .headline-wrapper h2 {
