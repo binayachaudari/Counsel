@@ -30,12 +30,12 @@ img {
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 28px;
   text-transform: uppercase;
 }
 
 h3 {
-  font-size: 14px;
+  font-size: 24px;
   text-transform: uppercase;
 }
 
@@ -132,7 +132,7 @@ header {
   display: block;
   text-decoration: none;
   color: white;
-  font-size: 12px;
+  font-size: 20px;
   line-height: 40px;
   text-transform: uppercase;
 }
@@ -195,7 +195,7 @@ header {
 
 .home-hero-flex-wrapper h1 {
   position: relative;
-  font-size: 20px;
+  font-size: 32px;
 }
 
 .home-hero-flex-wrapper .learn-more {
@@ -227,14 +227,14 @@ header {
 .section-subtitle {
   font-family: 'Segoe UI';
   color: #666666;
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 12px;
 }
 
 .section-description {
   font-family: 'Segoe UI';
   color: #333;
-  font-size: 14px;
+  font-size: 16px;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -246,7 +246,7 @@ header {
 }
 
 .learn-more {
-  font-size: 12px;
+  font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
   border-bottom: 2px solid currentcolor;
@@ -258,11 +258,11 @@ header {
 }
 
 .call-to-action {
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .statement-question {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .contact-now-btn {
@@ -297,14 +297,13 @@ header {
 
 .popular-item-desc p {
   font-family: 'Segoe UI';
-  line-height: 14px;
-  font-size: 12px;
+  font-size: 18px;
   width: 75%;
   margin: 0 auto;
 }
 
 .counter-item {
-  font-size: 20px;
+  font-size: 28px;
   width: 80%;
   margin: 0 auto;
   padding: 12px;
@@ -315,7 +314,7 @@ header {
 .counter-item .counter-category {
   font-family: 'Segoe UI';
   display: block;
-  font-size: 8px;
+  font-size: 14px;
   text-transform: uppercase;
   margin-top: 5px;
   letter-spacing: 2px;
@@ -329,13 +328,13 @@ header {
   content: '“';
   display: block;
   font-family: 'Helvetica Rounded LT';
-  font-size: 30px;
+  font-size: 45px;
   padding-bottom: 12px;
 }
 
 .author-writing p {
   font-family: 'Myriad Pro';
-  font-size: 12px;
+  font-size: 18px;
   width: 80%;
   margin: 0 auto;
   line-height: 24px;
@@ -346,7 +345,7 @@ header {
   margin-top: 20px;
   display: block;
   padding: 10px 5px;
-  font-size: 10px;
+  font-size: 14px;
   z-index: 5;
 }
 
@@ -359,8 +358,9 @@ header {
   background-color: white;
 }
 
-.map-info {
-  display: none;
+.map-info{
+  max-width: 310px;
+  margin: 0 auto;
 }
 
 .map-info-item {
@@ -368,14 +368,14 @@ header {
 }
 
 .map-info-item-desc {
-  padding: 16px;
+  padding: 20px;
   max-width: 310px;
   margin: 0 auto;
   box-shadow: 0 0 10px -5px rgba(0, 0, 0, .30);
 }
 
 .map-info-item-desc h4 {
-  font-size: 12px;
+  font-size: 16px;
   text-transform: uppercase;
 }
 
@@ -384,12 +384,12 @@ header {
 }
 
 .location-details-wrapper {
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .location-details-wrapper span {
   display: block;
-  padding: 5px;
+  padding: 10px;
 }
 
 .location-details-wrapper span i {
@@ -397,12 +397,12 @@ header {
 }
 
 footer {
-  font-size: 12px;
+  font-size: 18px;
   padding: 25px;
 }
 
 .copyright-info {
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 
 .copyright-info span a {
@@ -432,12 +432,10 @@ footer {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   h2 {
-    font-size: 20px;
     text-transform: uppercase;
   }
 
   h3 {
-    font-size: 16px;
     text-transform: uppercase;
   }
 
@@ -457,13 +455,11 @@ footer {
 
   .home-hero-flex-wrapper h1 {
     position: relative;
-    font-size: 24px;
   }
 
   .navigation-top ul li a {
     text-decoration: none;
     color: white;
-    font-size: 14px;
   }
 
   .section-about , .why-we-best, .call-to-action, .popular-services,
@@ -487,7 +483,6 @@ footer {
   }
 
   .section-subtitle {
-    font-size: 18px;
     margin-bottom: 14px;
   }
 
@@ -498,7 +493,6 @@ footer {
   }
 
   .learn-more {
-    font-size: 14px;
     font-weight: 600;
     padding: 2px;
   }
@@ -530,19 +524,13 @@ footer {
     margin-bottom: 32px;
   }
 
-  .author-writing p {
-    font-size: 14px;
-  }
-
   .author-writing p::before {
-    font-size: 38px;
     padding-bottom: 18px;
   }
 
   .author {
     margin-top: 26px;
     padding: 14px 5px;
-    font-size: 12px;
   }
 
   .author::before, .author::after {
@@ -551,7 +539,7 @@ footer {
 
   .map-info {
     display: inline-block;
-    max-width: 70%;
+    max-width: 370px;
     height: auto;
     margin-bottom: -5px;
   }
@@ -568,65 +556,12 @@ footer {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  h3 {
-    font-size: 24px;
-  }
-
-  .nav-links li a {
-    font-size: 16px;
-  }
-
-  .home-hero-flex-wrapper h1 {
-    font-size: 32px;
-  }
-
-  .learn-more {
-    font-size: 16px;
-  }
-
-  .section-subtitle {
-    font-size: 20px;
-  }
-
-  .section-description {
-    font-size: 16px;
-  }
-
-  .statement-question {
-    font-size: 20px;
-  }
-
-  .contact-now-btn {
-    font-size: 16px;
-  }
-
-  .popular-item-desc p {
-    font-size: 16px;
-  }
-
-  .counter-item {
-    font-size: 30px;
-  }
-
-  .counter-item .counter-category {
-    font-size: 10px;
-  }
-
-  .author-writing p {
-    font-size: 16px;
-  }
-
   .author {
-    font-size: 12px;
     margin-top: 32px;
   }
 
   .map-info-item h4 {
     font-size: 16px;
-  }
-
-  .location-details-wrapper {
-    font-size: 13px;
   }
 
   footer {
@@ -686,6 +621,7 @@ footer {
   }
 
   .nav-links li a {
+    font-size: 14px;
     display: block;
     line-height: 50px;
   }
